@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="459.0" prefWidth="513.0" styleClass="background" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1" fx:controller="cssapp.FXMLDocumentController">
+   <children>
+      <MenuBar prefHeight="25.0" prefWidth="513.0" styleClass="menubar">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TextField fx:id="usernameField" layoutX="132.0" layoutY="87.0" promptText="Username" styleClass="field" />
+      <PasswordField fx:id="passwordField" layoutX="132.0" layoutY="129.0" promptText="Password" styleClass="field" />
+      <Button layoutX="180.0" layoutY="165.0" mnemonicParsing="false" onAction="#clickSignIn" text="Sign in" />
+      <Label fx:id="message" layoutX="93.0" layoutY="190.0" prefHeight="17.0" prefWidth="229.0" styleClass="label" />
+      <TextArea fx:id="sampleField" layoutX="61.0" layoutY="256.0" prefHeight="170.0" prefWidth="410.0" styleClass="sample" />
+      <Button layoutX="120.0" layoutY="224.0" mnemonicParsing="false" onAction="#clickMakeSample" text="Make sample" />
+      <TextField fx:id="numberField" layoutX="256.0" layoutY="224.0" prefHeight="25.0" prefWidth="123.0" promptText="# of numbers" />
+   </children>
+</AnchorPane>
